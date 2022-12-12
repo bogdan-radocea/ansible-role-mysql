@@ -1,0 +1,8 @@
+  ¦ - name: Install MySQL database
+  ¦ ¦ yum:
+  ¦ ¦ ¦ name: "{{ item }}"
+  ¦ ¦ ¦ state: installed
+  ¦ ¦ ¦ with_items:
+  ¦ ¦ ¦ ¦ - mysql-server
+  ¦ ¦ ¦ ¦ - mysql
+

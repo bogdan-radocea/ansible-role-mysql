@@ -1,0 +1,9 @@
+    - name: Install all required dependencies
+      yum: name={{ item }}  state=installed
+      with_items:
+        - python
+        - python-setuptools
+        - python-devel
+        - "@Development tools"
+        - python-pip
+        - python3-PyMySQL
